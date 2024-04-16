@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chicken</title>
+        <title>BREAKFAST</title>
         <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default">
+              <div class="container">
+                <div class="navbar-header">
+                  <a href="index.html" class="pull-left visible-md visible-lg">
+                    <div id="logo-img" alt="Logo image"></div>
+                  </a>
+        
+                  <div class="navbar-brand">
+                    <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+                    <p>
+                      <img src="images/star-k-logo.png" alt="Kosher certification">
+                      <span>Kosher Certified</span>
+                    </p>
+                  </div>
+        
+                  <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                   <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li id="navHomeButton" class="visible-xs active">
+                      <a href="index.html">
+                        <span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li id="navMenuButton">
+                        <a href="#" onclick="$dc.loadMenuCategories();">
+                        <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+                    </li>
+                    <li id="phone" class="hidden-xs">
+                      <a href="tel:410-602-5008">
+                        <span>410-602-5008</span></a><div>* We Deliver</div>
+                    </li>
+                  </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+              </div><!-- .container -->
+            </nav><!-- #header-nav -->
+          </header>
+        
+          <div id="call-btn" class="visible-xs">
+            <a class="btn" href="tel:410-602-5008">
+            <span class="glyphicon glyphicon-earphone"></span>
+            410-602-5008
+            </a>
+          </div>
+          <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
         <h1>Our Menu</h1>
-        <div>
         <div class="box">
             <div id="chicken">
-                Chicken
+                <br>
+                BREAKFAST
             </div>
             <br>
-            <p>
-                Chicken dishes are diverse, spanning global cuisines. 
-                From the classic Roast Chicken with aromatic herbs to the bold flavors of Indian Chicken Tandoori, 
-                and the comforting Italian Chicken Alfredo, options abound. Whether 
-                it's the zing of Buffalo Chicken Wings or the savory Filipino Chicken Adobo, chicken's versatility
-                delights taste buds worldwide.
-            </p>
-        </div>
+            <ul class="yeah">
+                <li>
+                    <span class="item-name">Eggs Benedict</span> - Two poached eggs served on an English muffin with Canadian bacon and hollandaise sauce.
+                </li>
+                <br>
+                <li>
+                    <span class="item-name">Pancakes</span> - Fluffy pancakes served with maple syrup and butter.
+                </li>
+                <br>
+                <li>
+                    <span class="item-name">Omelette</span> - Three-egg omelette with your choice of fillings: cheese, mushrooms, peppers, onions, ham, or spinach.
+                </li>
+                <br>
+                <li>
+                    <span class="item-name">French Toast</span> - Slices of bread dipped in egg batter and grilled, served with powdered sugar and syrup.
+                </li>
+                <br>
+                <li>
+                    <span class="item-name">Breakfast Burrito</span> - Scrambled eggs, cheese, potatoes, and your choice of bacon, sausage, or chorizo wrapped in a flour tortilla.
+                </li>
+                <br>
+                <li>
+                    <span class="item-name">Fruit Bowl</span> - Assorted fresh fruits served with yogurt or cottage cheese.
+                </li>
+            </ul>            
         </div>
     </body>
 </html>
